@@ -18,8 +18,16 @@ Route::get('/', function () {
 });
 
 Route::get('hello', function () {
-	return "Hello Programação Web 3";
+    $produtos = \App\Models\Produto::all();
+    $categorias = \App\Models\Categoria::all();
+	return view('vitrine', compact('produtos', 'categorias'));
 });
+
+Route::get('categoriasvitrine/{categoria}', function ($categoria){
+    $categorias = \App\Models\Categoria::all();
+    $categoriaview = \App\Models\Categoria::findOrFail($categoria);
+    return view('vitrine2', compact('categorias', 'categoriaview'));
+})->name('categorias.vitrine');
 
 Route::get('user/{id}', function ($id){
     return "User: " . $id;

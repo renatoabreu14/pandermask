@@ -38,7 +38,14 @@ class ProdutoController extends Controller
      */
     public function store(Request $request)
     {
-        Produto::create($request->all());
+        $data = $request->all();
+        if ($request->file('imagem')->isValid()){
+            $name = hash('sha256', time());
+            $fileName = $name . '.' . $request->imagem->extension();
+            $request->file('imagem')->storeAs('produtos', $fileName);
+            $data['imagem'] = $fileName;
+        }
+        Produto::create($data);
         return redirect()->route('produtos.index');
     }
 

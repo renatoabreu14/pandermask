@@ -14,7 +14,7 @@
         <tbody>
         @foreach($produtos as $produto)
             <tr>
-                <td>{{--<img src="{{//$produto->imagem}}" width="100px" height="100px" alt="">--}}</td>
+                <td><img src="{{asset('/storage/produtos/'.$produto->imagem)}}" width="100px" height="100px" alt=""></td>
                 <td><a href="{{route('produtos.show', $produto)}}" alt="Visualizar" title="Visualizar">{{$produto->descricao}}</a></td>
                 <td>{{$produto->vlrproduto}}</td>
                 <td>

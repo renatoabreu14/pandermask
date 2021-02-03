@@ -18,7 +18,7 @@ class Produto extends Model
     ];
 
     protected $fillable = [
-        'descricao', 'tamanho', 'generomasc', 'vlrproduto', 'estoque', 'categoria_id'
+        'descricao', 'tamanho', 'generomasc', 'vlrproduto', 'estoque', 'imagem', 'categoria_id'
     ];
 
     public function categoria(){

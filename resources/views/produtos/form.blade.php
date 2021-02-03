@@ -40,6 +40,10 @@
         <label for="estoque">Estoque:</label>
         <input type="number" step="1" name="estoque" id="estoque" class="form-control" value="">
     </div>
+    <div class="col-4">
+        <label for="imagem">Imagem</label>
+        <input type="file" name="imagem" id="" class="form-control">
+    </div>
 </div>
 <div class="row" style="margin-top: 10px">
     <div class="col-12">

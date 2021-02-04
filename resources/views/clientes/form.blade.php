@@ -1,47 +1,47 @@
 <div class="row">
     <div class="col-12">
         <label for="nome">Nome:</label>
-        <input type="text" name="nome" id="" class="form-control" value="{{old($cliente->nome, '')}}">
+        <input type="text" name="nome" id="" class="form-control" value="{{old($cliente->nome, 'nome')}}">
     </div>
 </div>
 <div class="row">
     <div class="col-12">
         <label for="email">Email:</label>
-        <input type="email" name="email" id="" class="form-control" value="{{old($cliente->email, '')}}">
+        <input type="email" name="email" id="" class="form-control" value="">
     </div>
 </div>
 <div class="row">
     <div class="col-12">
         <label for="cpf">CPF:</label>
-        <input type="text" name="cpf" id="" class="form-control" value="{{old($cliente->cpf, '')}}">
+        <input type="text" name="cpf" id="" class="form-control" value="">
     </div>
 </div>
 <div class="row">
     <div class="col-12">
         <label for="endereco">Endereco:</label>
-        <input type="text" name="endereco" id="" class="form-control" value="{{old($cliente->endereco, '')}}">
+        <input type="text" name="endereco" id="" class="form-control" value="">
     </div>
 </div>
 <div class="row">
     <div class="col-12">
         <label for="bairro">Bairro:</label>
-        <input type="text" name="bairro" id="" class="form-control" value="{{old($cliente->bairro, '')}}">
+        <input type="text" name="bairro" id="" class="form-control" value="">
     </div>
 </div>
 <div class="row">
     <div class="col-6">
         <label for="cidade">Cidade:</label>
-        <input type="text" name="cidade" id="" class="form-control"  value="{{old($cliente->cidade, '')}}">
+        <input type="text" name="cidade" id="" class="form-control"  value="">
     </div>
     <div class="col-6">
         <label for="uf">UF:</label>
-        <input type="text" name="uf" id="" class="form-control" value="{{old($cliente->uf, '')}}">
+        <input type="text" name="uf" id="" class="form-control" value="">
     </div>
 </div>
 <div class="row">
     <div class="col-6">
         <label for="telefone">Telefone:</label>
-        <input type="text" name="telefone" id="" class="form-control"  value="{{old($cliente->telefone, '')}}">
+        <input type="text" name="telefone" id="" class="form-control"  value="">
     </div>
     @if(isset($cliente))
     <div class="col-6">

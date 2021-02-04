@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Categoria;
 use App\Models\Produto;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ProdutoController extends Controller
 {
@@ -68,7 +69,8 @@ class ProdutoController extends Controller
      */
     public function edit(Produto $produto)
     {
-        //
+        $categorias = Categoria::all();
+        return view('produtos.edit', compact('produto', 'categorias'));
     }
 
     /**
@@ -80,7 +82,22 @@ class ProdutoController extends Controller
      */
     public function update(Request $request, Produto $produto)
     {
-        //
+        $data = $request->except('_token', '_method');
+        if($request->hasFile('imagem')){
+            if ($request->file('imagem')->isValid()){
+                if(Storage::exists($produto->imagem)){
+                    Storage::delete($produto->imagem);
+                }
+                $name = hash('sha256', time());
+                $fileName = $name . '.' . $request->imagem->extension();
+                $request->file('imagem')->storeAs('produtos', $fileName);
+                $data['imagem'] = $fileName;
+            }
+        }else{
+            $data['imagem'] = $produto->imagem;
+        }
+        Produto::where('id', $produto->id)->update($data);
+        return redirect()->route('produtos.index');
     }
 
     /**
@@ -91,6 +108,10 @@ class ProdutoController extends Controller
      */
     public function destroy(Produto $produto)
     {
-        //
+        if(Storage::exists($produto->imagem)){
+            Storage::delete($produto->imagem);
+        }
+        $produto->delete();
+        return redirect()->route('produtos.index');
     }
 }

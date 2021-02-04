@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d9de860-700c-4454-ba26-35d606526a42" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vitrine2.blade.php" afterDir="false" />
+    <list default="true" id="1d9de860-700c-4454-ba26-35d606526a42" name="Default Changelist" comment="Projeto até aula do dia 28/01/2021">
+      <change afterPath="$PROJECT_DIR$/resources/views/produtos/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProdutoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProdutoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Produto.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Produto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/produtos/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/produtos/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/clientes/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/clientes/form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/produtos/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/produtos/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/produtos/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/produtos/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +147,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/produtos" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -160,6 +155,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/produtos" />
       <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
@@ -200,7 +196,18 @@
       <workItem from="1611325882822" duration="991000" />
       <workItem from="1611345103156" duration="3142000" />
       <workItem from="1611873126566" duration="3708000" />
+      <workItem from="1612379285408" duration="269000" />
+      <workItem from="1612391848409" duration="44000" />
+      <workItem from="1612477801697" duration="4481000" />
     </task>
+    <task id="LOCAL-00001" summary="Projeto até aula do dia 28/01/2021">
+      <created>1612379417842</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1612379417842</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +216,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -216,6 +248,15 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Projeto até aula do dia 28/01/2021" />
+    <option name="LAST_COMMIT_MESSAGE" value="Projeto até aula do dia 28/01/2021" />
   </component>
 </project>
